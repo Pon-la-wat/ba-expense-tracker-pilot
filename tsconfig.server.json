@@ -11,9 +11,10 @@
     ],
     "noEmit": false,
     "outDir": "dist/server",
-    "rootDir": "src/server"
+    "rootDir": "src"
   },
   "include": [
-    "src/server"
+    "src/server",
+    "src/shared"
   ]
 }

@@ -11,7 +11,7 @@
     "lint": "tsc -p tsconfig.json",
     "test": "vitest run",
     "build": "tsc -p tsconfig.server.json && vite build",
-    "start": "node dist/server/main.js",
+    "start": "node dist/server/server/main.js",
     "e2e": "playwright test"
   },
   "dependencies": {
