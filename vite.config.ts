@@ -1,0 +1,13 @@
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vitest/config";
+
+export default defineConfig({
+  plugins: [react()],
+  server: { proxy: { "/api": "http://127.0.0.1:3000" } },
+  build: { outDir: "dist/client", emptyOutDir: true },
+  test: {
+    environment: "jsdom",
+    include: ["tests/**/*.test.{ts,tsx}"],
+    exclude: ["e2e/**", "node_modules/**"],
+  },
+});
